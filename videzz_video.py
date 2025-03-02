@@ -10,6 +10,25 @@ import pickle
 from selenium.common.exceptions import WebDriverException
 # from pyvirtualdisplay import Display
 import re
+
+import threading
+import multiprocessing
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+import google_colab_selenium as gs
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+from selenium.webdriver import ActionChains
+from selenium.webdriver.support import expected_conditions as ec
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.action_chains import ActionChains
+
 # Khởi tạo môi trường headless (chạy không giao diện) với pyvirtualdisplay
 # display = Display(visible=0, size=(800, 600))
 # display.start()
