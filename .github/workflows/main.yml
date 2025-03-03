@@ -11,7 +11,7 @@ jobs:
   capture_screenshots:
     strategy:
       matrix:
-        runs-on: [windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest]  # 7 instances
+        runs-on: [windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest, windows-latest,windows-latest, windows-latest, windows-latest, windows-latest, windows-latest]  # 7 instances
     runs-on: ${{ matrix.runs-on }}
     
     steps:
