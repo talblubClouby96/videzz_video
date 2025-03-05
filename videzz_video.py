@@ -31,7 +31,8 @@ from selenium.webdriver.common.action_chains import ActionChains
 # Khởi tạo môi trường headless (chạy không giao diện) với pyvirtualdisplay
 # display = Display(visible=0, size=(800, 600))
 # display.start()
-
+import chromedriver_autoinstaller
+chromedriver_autoinstaller.install()
 
 def create_chrome_options():
     options = webdriver.ChromeOptions()
