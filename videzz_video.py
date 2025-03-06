@@ -17,7 +17,7 @@ from selenium.webdriver.support import expected_conditions as EC
 chromedriver_autoinstaller.install()
 
 # Thời gian chạy tối đa (35 phút)
-MAX_RUN_TIME = 1730  # 35 phút (tính theo giây)
+MAX_RUN_TIME = 1600  # 35 phút (tính theo giây)
 
 def create_chrome_options():
     options = webdriver.ChromeOptions()
