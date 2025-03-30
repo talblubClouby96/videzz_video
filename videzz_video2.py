@@ -64,7 +64,7 @@ link_list = [
 # Lấy ngẫu nhiên 2 link (có thể nhân đôi nếu cần)
 selected_links = random.sample(link_list, 2)
 # Nếu cần nhân đôi danh sách: selected_links = selected_links + selected_links
-print("Số link được chọn:", len(selected_links))
+print("So link dc chon:", len(selected_links))
 
 def run_main_selenium():
     # Lặp qua từng link được chọn
@@ -86,7 +86,7 @@ def run_main_selenium():
         try:
             WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//div[@id='vplayer']")))
         except Exception as e:
-            print(f"Không tìm thấy phần tử vplayer: {e}")
+            print(f"Khong tim thay: {e}")
 
         play_button_xpath = "//button[@title='Play Video']"
 
@@ -113,7 +113,7 @@ def run_main_selenium():
                     random_mouse_move(driver)
                     break  # Thoát vòng attempt nếu thành công
                 except Exception as e:
-                    print(f"Lỗi khi click play button (lần {attempt}): {e}")
+                    print(f"Loi khi click play button (lan {attempt}): {e}")
                     try:
                         # Fallback: click bằng JavaScript thay cho ActionChains
                         fallback_element = driver.find_element(By.XPATH, play_button_xpath)
@@ -121,8 +121,8 @@ def run_main_selenium():
                         time.sleep(5)
                         driver.save_screenshot(f"screenshot_fallback_{iteration}_{attempt}.png")
                     except Exception as fallback_error:
-                        print(f"Fallback click thất bại: {fallback_error}")
-            time.sleep(10)
+                        print(f"Fallback click thay bai: {fallback_error}")
+            time.sleep(5)
             driver.save_screenshot("screenshot_final.png")
 
         # Phần tải video
@@ -145,10 +145,10 @@ def run_main_selenium():
                     driver.execute_script("arguments[0].click();", captcha_box)
                     time.sleep(5)
                 except Exception:
-                    print("Không phát hiện captcha hoặc đã xử lý xong.")
+                    print("Khong co capcha.")
                 break  # Thoát nếu click download thành công
             except Exception as e:
-                print(f"Lỗi khi click download button (lần {attempt}): {e}")
+                print(f"loi khi click download button (lan {attempt}): {e}")
         driver.quit()
 
 run_main_selenium()
