@@ -113,7 +113,7 @@ def run_main_selenium():
                 except Exception as e:
                     print(f"Error: {e}")
 
-            time.sleep(150)
+            time.sleep(50)
 
             # Kiểm tra nếu đã chạy quá 35 phút
             if time.time() - start_time >= MAX_RUN_TIME:
