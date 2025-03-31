@@ -92,7 +92,7 @@ print(len(selected_links))
 def run_main_selenium():
 
     for link in selected_links:
-      for i in ["1", "2"]:
+      for i in ["1", "2", "2"]:
         driver = webdriver.Chrome(options=create_chrome_options())
         driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
 
