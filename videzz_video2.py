@@ -58,7 +58,7 @@ def random_mouse_move(driver):
         action.move_by_offset(x_offset, y_offset).perform()
         time.sleep(random.uniform(0.5, 1.5))  # Đảm bảo thời gian di chuyển không quá nhanh
 
-    except WebDriverException as e:
+    except Exception as e:
         # Kiểm tra và xử lý lỗi liên quan đến di chuyển chuột
         print(f"Error: {e}")
 
