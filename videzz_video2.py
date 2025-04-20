@@ -86,8 +86,24 @@ link_list = [
     "https://vidoza.net/fvqpwzxxds2c.html",
 ]
 
+link_list2 = [
+    "https://vidoza.net/f9vlu78gt2vj.html",
+    "https://vidoza.net/8u9ti0wv4d6j.html",
+    "https://vidoza.net/yra3hrl5rc9q.html",
+    "https://vidoza.net/jffzwuq1vqhy.html",
+   "https://vidoza.net/y12z7rz8q6nm.html",
+   "https://vidoza.net/peuzdqx40851.html",
+    "https://vidoza.net/o60h83je6j00.html",
+    "https://vidoza.net/rmw582erq23j.html",
+    "https://vidoza.net/deu8rmgdc20q.html",
+    "https://vidoza.net/pa75dzhugauv.html",
+    "https://vidoza.net/lw2o42dajez1.html",
+    "https://vidoza.net/k1x9y71oncoh.html"
+]
+
 selected_links = random.sample(link_list, 2)
-selected_links = selected_links + selected_links
+selected_links2 = random.sample(link_list2, 2)
+selected_links = selected_links + selected_links2
 print(len(selected_links))
 def run_main_selenium():
 
