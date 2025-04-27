@@ -98,7 +98,7 @@ link_list2 = [
     "https://vidoza.net/deu8rmgdc20q.html",
     "https://vidoza.net/pa75dzhugauv.html",
     "https://vidoza.net/lw2o42dajez1.html",
-    "https://vidoza.net/k1x9y71oncoh.html"
+    "https://vidoza.net/k1x9y71oncoh.html",
 ]
 
 selected_links = random.sample(link_list, 2)
