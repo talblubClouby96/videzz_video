@@ -101,7 +101,7 @@ link_list2 = [
     "https://vidoza.net/k1x9y71oncoh.html",
 ]
 
-selected_links = random.sample(link_list, 2)
+selected_links = random.sample(link_list2, 2)
 selected_links2 = random.sample(link_list2, 2)
 selected_links = selected_links + selected_links2
 print(len(selected_links))
